@@ -2,9 +2,9 @@ version: "1"
 
 services:
   tomcat:
-    build: .
+    build: ./tomcat
     container_name: tomcat-spa
     ports:
       - "8080:8080"
     volumes:
-      - ./webapp:/usr/local/tomcat/webapps/ROOT/
+      - ./tomcat/webapp:/usr/local/tomcat/webapps/ROOT/
